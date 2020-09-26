@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Form for smth</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="img">
+      <img src="img/img1.png" alt="">
+    </div>
+    <div class="form-content">
+      <form action="#">
+        <div class="form-group first">
+          <label for="username">Name</label>
+          <input type="text" name="username" value="" placeholder="Luke Skywalker">
+        </div>
+        <div class="form-group radio">
+          <label class="gender" for="gender">Gender</label>
+          <input type="radio" checked name="gender" value="male">
+          <label for="Male">Male</label>
+          <input type="radio" name="gender" value="female">
+          <label for="Female">Female</label>
+        </div>
+        <div class="form-group">
+          <label for="date">Date of Birhday</label>
+          <input type="text" placeholder="May 25, 1977" value="">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" placeholder="lukeskywalker@galaxy.com" value="">
+        </div>
+        <div class="form-group">
+          <label for="city">City</label>
+          <input type="text" placeholder="Moisture Farm" value="">
+        </div>
+        <div class="form-group">
+          <label for="country">Country</label>
+          <input type="text" placeholder="Tatooine" value="">
+        </div>
+        <div class="form-box-subs">
+          <div class="form__label">
+            <label for="subscription">Subscription</label>
+          </div>
+          <div class="form__subscriptions">
+            <a href="#">Bronze</a>
+            <a href="#">Silver</a>
+            <a href="#">Gold</a>
+          </div>
+        </div>
+        <div class="button">
+          <button class="button__cancel">CANCEL</button>
+          <button class="button__save" id="save">SAVE</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

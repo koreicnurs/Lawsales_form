@@ -1,0 +1,129 @@
+// Подключение шрифтов
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  color: #818587;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  max-width: 1020px;
+  max-height: 660px;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px 5px rgba(129, 133, 135, 0.15);
+
+  .img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    img{
+      border-radius: 20px 0 0 20px;
+    }
+  }
+
+  .form-content {
+    display: flex;
+    flex-grow: 1;
+    margin: 0 auto;
+
+    form{
+      margin: 0 auto;
+    }
+    
+    .form-group{
+      display: flex;
+      justify-content: space-between;
+      max-width: 390px;
+      max-height: 510px;
+      padding: 0 0 16px;
+    }
+    .radio{
+      padding: 14px 0 30px;
+      position: relative;
+      .gender{
+        padding-right: 5%;
+        }
+      }
+    }
+
+    .first{
+      margin-top: 75px;
+    }
+    
+}
+
+input{
+  height: 38px;
+  width: 285px;
+  padding: 15px;
+  border: 2px solid #DFE7EA;
+}
+
+label{
+  align-self: center;
+}
+
+.form-box-subs{
+  display: flex;
+  padding: 44px 0 64px;
+
+  .form__label{
+    display: flex;
+    width: 105px;
+    align-items: center;
+  
+  }
+  .form__subscriptions{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 285px;
+
+    a{
+      display:inline-block;
+      padding:10px;
+      &:first-child{
+        color: #FBB03B;
+      }
+      &:nth-child(2){
+        color: #998675;
+      }
+      &:last-child{
+        color: #FCEE21;
+      }
+    }
+  }
+}
+.button{
+  display: flex;
+  justify-content: flex-end;
+  
+  .button__cancel{
+    margin-right: 8px;
+    width: 140px;
+    height: 40px;
+    background-color: #F5F8F9;
+    &:hover{
+      color: #FFFFFF;
+      background-color: #95EB75;
+      transition: .3s;
+    }
+  }
+  .button__save{
+    width: 140px;
+    height: 40px;
+    background-color: #F5F8F9;
+    &:hover{
+      color: #FFFFFF;
+      background-color: #95EB75;
+      transition: .3s;
+    }
+  }
+}

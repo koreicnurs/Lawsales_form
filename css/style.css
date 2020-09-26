@@ -1,0 +1,246 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  color: #818587;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1020px;
+  max-height: 660px;
+  margin: 0 auto;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 5px 20px 5px rgba(129, 133, 135, 0.15);
+          box-shadow: 5px 5px 20px 5px rgba(129, 133, 135, 0.15);
+}
+
+.container .img {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container .img img {
+  border-radius: 20px 0 0 20px;
+}
+
+.container .form-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 0 auto;
+}
+
+.container .form-content form {
+  margin: 0 auto;
+}
+
+.container .form-content .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 390px;
+  max-height: 510px;
+  padding: 0 0 16px;
+}
+
+.container .form-content .radio {
+  padding: 14px 0 30px;
+  position: relative;
+}
+
+.container .form-content .radio .gender {
+  padding-right: 5%;
+}
+
+.container .first {
+  margin-top: 75px;
+}
+
+input {
+  height: 38px;
+  width: 285px;
+  padding: 15px;
+  border: 2px solid #DFE7EA;
+}
+
+label {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.form-box-subs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 44px 0 64px;
+}
+
+.form-box-subs .form__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 105px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-box-subs .form__subscriptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 285px;
+}
+
+.form-box-subs .form__subscriptions a {
+  display: inline-block;
+  padding: 10px;
+}
+
+.form-box-subs .form__subscriptions a:first-child {
+  color: #FBB03B;
+}
+
+.form-box-subs .form__subscriptions a:nth-child(2) {
+  color: #998675;
+}
+
+.form-box-subs .form__subscriptions a:last-child {
+  color: #FCEE21;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.button .button__cancel {
+  margin-right: 8px;
+  width: 140px;
+  height: 40px;
+  background-color: #F5F8F9;
+}
+
+.button .button__cancel:hover {
+  color: #FFFFFF;
+  background-color: #95EB75;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.button .button__save {
+  width: 140px;
+  height: 40px;
+  background-color: #F5F8F9;
+}
+
+.button .button__save:hover {
+  color: #FFFFFF;
+  background-color: #95EB75;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+/*# sourceMappingURL=style.css.map */
