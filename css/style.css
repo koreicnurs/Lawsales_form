@@ -87,9 +87,12 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 1020px;
   max-height: 660px;
-  margin: 0 auto;
+  margin: auto;
   border-radius: 20px;
   -webkit-box-shadow: 5px 5px 20px 5px rgba(129, 133, 135, 0.15);
           box-shadow: 5px 5px 20px 5px rgba(129, 133, 135, 0.15);
@@ -139,10 +142,6 @@ body {
 
 .container .form-content .radio .gender {
   padding-right: 5%;
-}
-
-.container .first {
-  margin-top: 75px;
 }
 
 input {
@@ -242,5 +241,38 @@ label {
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
+}
+
+@media (max-width: 1020px) {
+  .container {
+    max-width: 850px;
+  }
+}
+
+@media (max-width: 805px) {
+  .container {
+    max-width: 420;
+    margin-top: 5%;
+  }
+  .img {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .q {
+    position: relative;
+  }
+  .container {
+    max-width: none;
+    margin-top: 20%;
+    padding: 0 30px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    position: absolute;
+  }
+  .img {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
